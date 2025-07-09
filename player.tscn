@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dcmmy8y6opeud"]
 
-[ext_resource type="Script" uid="uid://djyjlxe1o1l6n" path="res://character_body_3d.gd" id="1_iwpo4"]
+[ext_resource type="Script" uid="uid://djyjlxe1o1l6n" path="res://player.gd" id="1_iwpo4"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bu0v1"]
 radius = 0.705204
@@ -13,10 +13,10 @@ script = ExtResource("1_iwpo4")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.36415, 0)
 shape = SubResource("CapsuleShape3D_bu0v1")
 
-[node name="head" type="Node3D" parent="."]
+[node name="Head" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.13066, 0)
 
-[node name="Camera3D" type="Camera3D" parent="head"]
+[node name="Camera3D" type="Camera3D" parent="Head"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.017404, 0)
 current = true
 fov = 68.0734

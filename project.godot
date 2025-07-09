@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="SADD23BH"
-run/main_scene="uid://b2fhytjva84go"
+run/main_scene="uid://t8adrp1dpnyo"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 

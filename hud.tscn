@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://pcek860sosgm"]
+
+[ext_resource type="Texture2D" uid="uid://ivk613e4aogd" path="res://assets/hud.png" id="1_37p78"]
+[ext_resource type="Script" uid="uid://bhcwhuhl05nf2" path="res://hud.gd" id="1_64ctp"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_64ctp")
+
+[node name="Hud" type="Sprite2D" parent="."]
+position = Vector2(575.75, 322.5)
+scale = Vector2(0.461, 0.319704)
+texture = ExtResource("1_37p78")
+
+[node name="GameAreaControl" type="Control" parent="Hud"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -1149.0
+offset_top = -768.0
+offset_right = 428.0
+offset_bottom = 881.0
+
+[connection signal="gui_input" from="Hud/GameAreaControl" to="." method="_on_control_gui_input"]
