@@ -1,22 +1,30 @@
-[gd_scene load_steps=7 format=3 uid="uid://b2fhytjva84go"]
+[gd_scene load_steps=9 format=3 uid="uid://b2fhytjva84go"]
 
 [ext_resource type="PackedScene" uid="uid://dcmmy8y6opeud" path="res://player.tscn" id="1_f3sb7"]
 [ext_resource type="Script" uid="uid://06xqyta0wj1r" path="res://world.gd" id="1_tlwt5"]
+[ext_resource type="Texture2D" uid="uid://1afh2nwfuwyn" path="res://тупаяигра.png" id="2_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://pcek860sosgm" path="res://hud.tscn" id="2_fj7yv"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_f3sb7"]
-sky_top_color = Color(0.49, 0.49, 0.49, 1)
-sky_horizon_color = Color(0.74, 0.74, 0.74, 1)
-ground_bottom_color = Color(0.56, 0.56, 0.56, 1)
-ground_horizon_color = Color(0.71, 0.71, 0.71, 1)
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tlwt5"]
+sky_top_color = Color(0.224926, 0.114287, 0.3155, 1)
+sky_horizon_color = Color(0.870864, 0.576194, 0.750026, 1)
+sky_curve = 0.172305
+sky_cover_modulate = Color(0.204735, 0.153448, 0.419163, 1)
+ground_bottom_color = Color(0.0715234, 0.178345, 0.265992, 1)
+ground_horizon_color = Color(0.444583, 0.524727, 0.661643, 1)
+ground_curve = 0.0746429
+ground_energy_multiplier = 3.21
 
 [sub_resource type="Sky" id="Sky_fj7yv"]
-sky_material = SubResource("ProceduralSkyMaterial_f3sb7")
+sky_material = SubResource("ProceduralSkyMaterial_tlwt5")
 
 [sub_resource type="Environment" id="Environment_tlwt5"]
 background_mode = 2
 background_energy_multiplier = 0.52
 sky = SubResource("Sky_fj7yv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_036b0"]
+albedo_texture = ExtResource("2_aqk2v")
 
 [node name="World" type="Node3D"]
 script = ExtResource("1_tlwt5")
@@ -26,6 +34,7 @@ environment = SubResource("Environment_tlwt5")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9072, 0.00341797, -2.19003)
+material_override = SubResource("StandardMaterial3D_036b0")
 use_collision = true
 size = Vector3(18.9811, 0.311523, 19.1454)
 
