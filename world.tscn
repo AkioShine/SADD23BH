@@ -24,7 +24,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9072, 0.00341797, -2.19003
 use_collision = true
 size = Vector3(18.9811, 0.311523, 19.1454)
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("1_f3sb7")]
+[node name="Player" parent="." instance=ExtResource("1_f3sb7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.93998, 0.159178, -3.80046)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
