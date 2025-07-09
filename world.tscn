@@ -15,7 +15,6 @@ sky_material = SubResource("ProceduralSkyMaterial_f3sb7")
 background_mode = 2
 background_energy_multiplier = 0.52
 sky = SubResource("Sky_fj7yv")
-sky_custom_fov = 11.4
 
 [node name="World" type="Node3D"]
 

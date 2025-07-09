@@ -56,3 +56,7 @@ func _physics_process(delta):
 	velocity.z = lerp(velocity.z ,direction.z * SPEED, accel * delta)
 	move_and_slide()
 	###################################################-- 
+	
+	# после падения
+	if position.y < -10:
+		position = Vector3(0, 0,0 )
