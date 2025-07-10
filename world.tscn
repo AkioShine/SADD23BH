@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://b2fhytjva84go"]
+[gd_scene load_steps=10 format=3 uid="uid://b2fhytjva84go"]
 
 [ext_resource type="PackedScene" uid="uid://dcmmy8y6opeud" path="res://player.tscn" id="1_f3sb7"]
 [ext_resource type="Script" uid="uid://06xqyta0wj1r" path="res://world.gd" id="1_tlwt5"]
 [ext_resource type="Texture2D" uid="uid://1afh2nwfuwyn" path="res://тупаяигра.png" id="2_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://pcek860sosgm" path="res://hud.tscn" id="2_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://bac30yg6syqvj" path="res://sisa.tscn" id="5_036b0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_036b0"]
 albedo_texture = ExtResource("2_aqk2v")
@@ -95,5 +96,8 @@ environment = SubResource("Environment_tlwt5")
 [node name="Hud" parent="." instance=ExtResource("2_fj7yv")]
 offset_right = 1.0
 offset_bottom = -1.0
+
+[node name="Sisa" parent="." instance=ExtResource("5_036b0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.861505, 0.0188122, 0)
 
 [connection signal="resume" from="Hud" to="SubViewportContainer/SubViewport/Player" method="_on_hud_resume"]

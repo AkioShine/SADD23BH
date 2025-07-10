@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bac30yg6syqvj"]
+
+[ext_resource type="Texture2D" uid="uid://1afh2nwfuwyn" path="res://тупаяигра.png" id="1_nfpqm"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nfpqm"]
+height = 1.87187
+
+[node name="Sisa" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(-5.90104e-09, 0.135, 0, -0.135, -5.90104e-09, 0, 0, 0, 0.135, 0, 1.48079, 0)
+texture = ExtResource("1_nfpqm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sprite3D"]
+transform = Transform3D(1.40293e-07, -11.7647, 0, 11.7647, 1.40293e-07, 0, 0, 0, 11.7647, 0.0499945, -5.96174e-10, 0)
+shape = SubResource("CapsuleShape3D_nfpqm")
