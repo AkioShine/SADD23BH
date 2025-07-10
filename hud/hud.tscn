@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://pcek860sosgm"]
 
-[ext_resource type="Script" uid="uid://bhcwhuhl05nf2" path="res://hud.gd" id="1_64ctp"]
+[ext_resource type="Script" uid="uid://bhcwhuhl05nf2" path="res://hud/hud.gd" id="1_64ctp"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_37p78"]
 load_path = "res://.godot/imported/hud.png-6fcad9b444d0f9920bef7b35c87ff411.ctex"

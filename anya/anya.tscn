@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bac30yg6syqvj"]
+
+[ext_resource type="Texture2D" uid="uid://xsakt7jn2qpt" path="res://anya/front.png" id="1_2mq22"]
+[ext_resource type="Script" uid="uid://bvdcb0mjnsl5t" path="res://anya/anya.gd" id="1_e2ju0"]
+[ext_resource type="Texture2D" uid="uid://bokcw8xnwjvyh" path="res://anya/back.png" id="2_e2ju0"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nfpqm"]
+height = 1.87187
+
+[node name="Anya" type="CharacterBody3D"]
+script = ExtResource("1_e2ju0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.58824, 8.83635e-08, 0, -8.83635e-08, 1.58824, 0, 0, 0, 1.58824, -3.75503e-10, 1.47404, 0)
+shape = SubResource("CapsuleShape3D_nfpqm")
+
+[node name="Sprite3DFront" type="Sprite3D" parent="."]
+transform = Transform3D(0.135, 0, 0, 0, 0.135, 0, 0, 0, 0.135, 0, 1.61152, 0)
+texture = ExtResource("1_2mq22")
+
+[node name="Sprite3DBack" type="Sprite3D" parent="Sprite3DFront"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
+texture = ExtResource("2_e2ju0")
