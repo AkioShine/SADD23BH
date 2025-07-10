@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://5plgacv6rt3g"]
+
+[ext_resource type="FontFile" uid="uid://u6m7oh88l3ft" path="res://components/OCR A Extended Regular.ttf" id="1_p6gap"]
+[ext_resource type="Script" uid="uid://b753q5ujlw6im" path="res://components/back/back.gd" id="1_styf8"]
+
+[sub_resource type="Theme" id="Theme_p6gap"]
+default_font = ExtResource("1_p6gap")
+default_font_size = 40
+
+[node name="Back" type="Button"]
+offset_left = 53.0
+offset_top = 31.0
+offset_right = 161.0
+offset_bottom = 130.0
+theme = SubResource("Theme_p6gap")
+text = "Back"
+script = ExtResource("1_styf8")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
