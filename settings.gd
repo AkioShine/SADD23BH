@@ -1,5 +1,4 @@
-extends Node3D
-
+extends Control
 
 
 # Called when the node enters the scene tree for the first time.
@@ -11,6 +10,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func _input(event: InputEvent) -> void:
-	$SubViewportContainer/SubViewport/Player._input(event)
-	
+
+func _on_back_pressed() -> void:
+	get_tree().change_scene_to_file(Global.prev_scene)

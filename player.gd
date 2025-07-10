@@ -3,9 +3,9 @@ extends CharacterBody3D
 @onready var head = $Head
 @onready var cam = $Head/Camera3D
 
-func on_resume(): 
+func _on_hud_resume() -> void:
 	start()
- 
+
 var accel = 8
 var BASE_SPEED = 7.0
 var SPEED = 0

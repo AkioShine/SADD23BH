@@ -1,7 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://pcek860sosgm"]
 
 [ext_resource type="Script" uid="uid://bhcwhuhl05nf2" path="res://hud.gd" id="1_64ctp"]
-[ext_resource type="Texture2D" uid="uid://cf2dba52wh0td" path="res://играаа44.png" id="2_64ctp"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_37p78"]
+load_path = "res://.godot/imported/hud.png-6fcad9b444d0f9920bef7b35c87ff411.ctex"
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -15,7 +17,31 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_64ctp")
 
-[node name="Играаа44" type="Sprite2D" parent="."]
-position = Vector2(577.5, 319)
-scale = Vector2(0.453704, 0.447222)
-texture = ExtResource("2_64ctp")
+[node name="Hud" type="TextureRect" parent="."]
+layout_mode = 1
+offset_left = -1.0
+offset_top = -5.0
+offset_right = 2499.0
+offset_bottom = 2025.0
+scale = Vector2(0.39, 0.39)
+texture = SubResource("CompressedTexture2D_37p78")
+
+[node name="GameAreaFocusHandler" type="Button" parent="Hud"]
+light_mask = 0
+visibility_layer = 0
+layout_mode = 0
+offset_left = 69.0
+offset_top = 218.0
+offset_right = 1687.0
+offset_bottom = 1931.0
+
+[node name="Settings" type="Button" parent="Hud"]
+visibility_layer = 0
+layout_mode = 0
+offset_left = 69.0
+offset_top = 23.0
+offset_right = 243.0
+offset_bottom = 195.0
+
+[connection signal="pressed" from="Hud/GameAreaFocusHandler" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Hud/Settings" to="." method="_on_settings_pressed"]

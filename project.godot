@@ -15,6 +15,16 @@ run/main_scene="uid://t8adrp1dpnyo"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://global.gd"
+
+[display]
+
+window/size/viewport_width=970
+window/size/viewport_height=790
+window/stretch/mode="canvas_items"
+
 [editor]
 
 version_control/plugin_name="GitPlugin"
