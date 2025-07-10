@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnp7xhmvt7gxo"]
+
+[ext_resource type="PackedScene" uid="uid://5plgacv6rt3g" path="res://components/back.tscn" id="1_k47ca"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Back" parent="." instance=ExtResource("1_k47ca")]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 30.0
+offset_right = 139.0
+offset_bottom = 129.0

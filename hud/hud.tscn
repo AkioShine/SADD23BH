@@ -43,5 +43,32 @@ offset_top = 23.0
 offset_right = 243.0
 offset_bottom = 195.0
 
-[connection signal="pressed" from="Hud/GameAreaFocusHandler" to="." method="_on_button_pressed"]
+[node name="Music" type="Button" parent="Hud"]
+visibility_layer = 0
+layout_mode = 0
+offset_left = 997.436
+offset_top = 25.641
+offset_right = 1171.44
+offset_bottom = 197.641
+
+[node name="Dress" type="Button" parent="Hud"]
+visibility_layer = 0
+layout_mode = 0
+offset_left = 305.0
+offset_top = 33.0
+offset_right = 923.0
+offset_bottom = 205.0
+
+[node name="KillCounter" type="Label" parent="Hud"]
+layout_mode = 0
+offset_left = 2141.03
+offset_top = 333.333
+offset_right = 2389.03
+offset_bottom = 471.333
+theme_override_font_sizes/font_size = 101
+text = "0"
+
+[connection signal="pressed" from="Hud/GameAreaFocusHandler" to="." method="_on_game_area_focus_handler_pressed"]
 [connection signal="pressed" from="Hud/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Hud/Music" to="." method="_on_music_pressed"]
+[connection signal="pressed" from="Hud/Dress" to="." method="_on_dress_pressed"]

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://culqlnrg64q1d"]
+
+[ext_resource type="PackedScene" uid="uid://5plgacv6rt3g" path="res://components/back.tscn" id="1_f8xa4"]
+
+[node name="Saves" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Back" parent="." instance=ExtResource("1_f8xa4")]
+layout_mode = 0

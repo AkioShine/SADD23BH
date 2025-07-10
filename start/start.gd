@@ -11,10 +11,10 @@ func _process(delta: float) -> void:
 	pass # Replace with function body.
 
 func _on_start_pressed() -> void:
-	Global.change_scene("res://world.tscn")
+	Global.change_scene("res://world/world.tscn")
 
 func _on_saves_pressed() -> void:
-	pass # Replace with function body.
+	Global.to_saves()
 
 func _on_settings_pressed() -> void:
 	Global.to_settings()
