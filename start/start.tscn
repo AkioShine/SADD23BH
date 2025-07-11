@@ -147,14 +147,14 @@ text = "Start"
 [node name="Start2" type="Button" parent="Buttons"]
 material = SubResource("ShaderMaterial_0wxl8")
 layout_mode = 0
-offset_left = 27.0
-offset_top = 6.0
+offset_left = 26.0
+offset_top = 7.0
 offset_right = 223.0
-offset_bottom = 59.0
+offset_bottom = 60.0
 theme = ExtResource("2_k11ym")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 42
-text = "SAD23BH"
+theme_override_font_sizes/font_size = 39
+text = "SADD23BH"
 
 [node name="Saves" type="Button" parent="Buttons"]
 material = SubResource("ShaderMaterial_2502t")
