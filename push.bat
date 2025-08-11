@@ -1,4 +1,4 @@
 git add ./
-git commit -m "хиля на"
+git commit -m "hilya na"
 git push
 pause
