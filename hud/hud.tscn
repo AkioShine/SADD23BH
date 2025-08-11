@@ -1,17 +1,16 @@
 [gd_scene load_steps=3 format=3 uid="uid://pcek860sosgm"]
 
 [ext_resource type="Script" uid="uid://bhcwhuhl05nf2" path="res://hud/hud.gd" id="1_64ctp"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_37p78"]
-load_path = "res://.godot/imported/hud.png-6fcad9b444d0f9920bef7b35c87ff411.ctex"
+[ext_resource type="Texture2D" uid="uid://dikws77e2vynd" path="res://hud/hud.png" id="2_2gk58"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -3.0
 offset_top = 4.0
-offset_right = 4.0
+offset_right = 1.0
 offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -19,52 +18,52 @@ script = ExtResource("1_64ctp")
 
 [node name="Hud" type="TextureRect" parent="."]
 layout_mode = 1
-offset_left = -1.0
-offset_top = -5.0
-offset_right = 2499.0
-offset_bottom = 2025.0
+offset_left = 1.0
+offset_top = -3.0
+offset_right = 2501.0
+offset_bottom = 2027.0
 scale = Vector2(0.39, 0.39)
-texture = SubResource("CompressedTexture2D_37p78")
+texture = ExtResource("2_2gk58")
 
 [node name="GameAreaFocusHandler" type="Button" parent="Hud"]
 light_mask = 0
 visibility_layer = 0
 layout_mode = 0
-offset_left = 69.0
-offset_top = 218.0
-offset_right = 1687.0
-offset_bottom = 1931.0
+offset_left = 100.0
+offset_top = 246.154
+offset_right = 1718.0
+offset_bottom = 1915.15
 
 [node name="Settings" type="Button" parent="Hud"]
 visibility_layer = 0
 layout_mode = 0
-offset_left = 69.0
-offset_top = 23.0
-offset_right = 243.0
-offset_bottom = 195.0
+offset_left = 72.0
+offset_top = 21.0
+offset_right = 236.0
+offset_bottom = 183.0
 
 [node name="Music" type="Button" parent="Hud"]
 visibility_layer = 0
 layout_mode = 0
-offset_left = 997.436
-offset_top = 25.641
-offset_right = 1171.44
-offset_bottom = 197.641
+offset_left = 1008.0
+offset_top = 18.0
+offset_right = 1175.0
+offset_bottom = 182.0
 
 [node name="Dress" type="Button" parent="Hud"]
 visibility_layer = 0
 layout_mode = 0
-offset_left = 305.0
-offset_top = 33.0
-offset_right = 923.0
-offset_bottom = 205.0
+offset_left = 318.0
+offset_top = 18.0
+offset_right = 928.0
+offset_bottom = 185.0
 
 [node name="KillCounter" type="Label" parent="Hud"]
 layout_mode = 0
-offset_left = 2141.03
-offset_top = 333.333
-offset_right = 2389.03
-offset_bottom = 471.333
+offset_left = 2077.0
+offset_top = 305.0
+offset_right = 2405.0
+offset_bottom = 471.0
 theme_override_font_sizes/font_size = 101
 text = "0"
 
