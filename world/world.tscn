@@ -47,7 +47,7 @@ render_target_update_mode = 4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.93998, 0.159178, -3.80046)
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="SubViewportContainer/SubViewport"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.5868, 0.639768, -3.65872)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.276, -0.258369, -0.968863)
 use_collision = true
 size = Vector3(6.83405, 1, 4.0592)
 
@@ -63,6 +63,11 @@ size = Vector3(5.56262, 2.65234, 1)
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="SubViewportContainer/SubViewport"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.5092, -0.196665, -2.83504)
+use_collision = true
+size = Vector3(12.1518, 3.32135, 9.10284)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.4271, -0.196665, -2.83504)
 use_collision = true
 size = Vector3(12.1518, 3.32135, 9.10284)
 
